@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git 'https://github.com/<username>/flask-ci-cd.git'
-            }
-        }
 
         stage('Build Docker Image') {
             steps {
